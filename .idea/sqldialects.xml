@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/training/data/data_collection.py" dialect="GenericSQL" />
-    <file url="notebook:///Users/dani/Library/CloudStorage/GoogleDrive-1522451@fcpsschools.net/My Drive/High School/12th Grade/1 - Astro/Exoplanet Generator/training/exoplanet-generator.ipynb" dialect="GenericSQL" />
-  </component>
-</project>
