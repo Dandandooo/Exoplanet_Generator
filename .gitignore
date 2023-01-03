@@ -161,6 +161,4 @@ cython_debug/
 #.idea/
 
 # just cause
-
-training/stylegan/.github/
-training/stylegan/.gitignore
+training/stylegan/
