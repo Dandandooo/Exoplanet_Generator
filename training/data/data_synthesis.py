@@ -57,8 +57,7 @@ for planet in planets:
         print(f'\x1b[31m{planet}\x1b[0m')
         continue
     print(f'\x1b[32m{planet}\x1b[0m', end='\33[2K\r')
-    #     print([[f for f in pl_arr[:, i] if f != float('nan')] for i in range(pl_arr.shape[1])])
-    pl_mean = np.array([[np.mean([pl_arr[:, i][~np.isnan(pl_arr[:, i])]]) for i in range(pl_arr.shape[1])]])
+    pl_mean = np.array([[np.nanmean([pl_arr[:, i]]) for i in range(pl_arr.shape[1])]])
     pl_final = np.concatenate((np.array([[planet]], dtype=object), pl_mean, np.array([[pl_type]], dtype=object)),
                               axis=1)
     planet_arrays = np.concatenate((planet_arrays, pl_final), axis=0) if planet_arrays.size else pl_final
